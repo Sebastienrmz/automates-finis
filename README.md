@@ -2,11 +2,11 @@
 
 Projet de cours EFREI P2, **2025–2026**, réalisé en **équipe de trois**. Le programme lit un automate dans un fichier texte, affiche sa table de transitions et permet d’appliquer les transformations étudiées en cours.
 
-Le dépôt conserve les algorithmes du projet, avec des corrections et une organisation plus simple : une bibliothèque pour les traitements, un menu et un dossier d’exemples. Il fonctionne en console, sans bibliothèque externe à installer pour l’utiliser avec Python.
+Le programme fonctionne en console avec la bibliothèque standard de Python.
 
 ## Essayer rapidement sur Windows
 
-1. Ouvrir [la dernière version](../../releases/latest).
+1. Ouvrir [la dernière version](https://github.com/Sebastienrmz/automates-finis/releases/latest).
 2. Télécharger **Automates-finis-Windows.zip**.
 3. Extraire tout le ZIP dans un dossier.
 4. Ouvrir **Tester.bat**. Python n’est pas nécessaire pour cette version.
@@ -34,7 +34,7 @@ Une ligne vide à l’étape de reconnaissance représente le mot vide. Les mots
 - Minimisation par raffinement de partitions, après retrait des états inaccessibles.
 - Reconnaissance de mots et construction du langage complémentaire.
 
-Les choix de standardisation et de poursuite du traitement restent interactifs, comme dans la version reçue. Le programme ne produit pas de dessin du graphe : il affiche des tables et les correspondances entre états.
+Le menu permet de choisir les transformations à appliquer. Les résultats sont affichés sous forme de tables et de correspondances entre états.
 
 ## Lancer le code
 
@@ -76,7 +76,7 @@ Les cinq premières lignes indiquent, dans l’ordre :
 4. Le nombre d’états terminaux, suivi de leurs numéros.
 5. Le nombre de transitions, suivies chacune d’une ligne `départ symbole arrivée`.
 
-`*` représente une transition epsilon. Les commentaires commençant par `#`, les lignes vides et le format compact `0a1` sont acceptés. Le lecteur conserve aussi la possibilité du projet de créer un état nommé en majuscules, par exemple `P`, lorsqu’il apparaît dans une transition. Les états initiaux et terminaux du fichier restent numériques.
+`*` représente une transition epsilon. Les commentaires commençant par `#`, les lignes vides et le format compact `0a1` sont acceptés. Un état nommé en majuscules, par exemple `P`, peut être ajouté lorsqu’il apparaît dans une transition. Les états initiaux et terminaux du fichier restent numériques.
 
 Les **45 fichiers** du dossier `data` comprennent les exemples `01` à `44` et `exemple`. Le premier montre le cas d’un alphabet vide.
 
