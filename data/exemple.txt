@@ -1,0 +1,13 @@
+# Automate exemple du sujet projet
+# 5 états, alphabet {a,b}, initial={0}, terminal={4}
+2
+5
+1 0
+1 4
+6
+0 a 0
+0 b 0
+0 a 1
+1 b 2
+2 a 3
+3 a 4
